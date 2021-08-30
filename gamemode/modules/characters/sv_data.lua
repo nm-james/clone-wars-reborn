@@ -1,0 +1,1 @@
+print("CHAR DATA")

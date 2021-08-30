@@ -1,0 +1,6 @@
+"swrpg"
+{
+	"base"		"sandbox"
+	"title"		"Star Wars - An Open World RPG"
+	"menusystem"	"1"
+}
