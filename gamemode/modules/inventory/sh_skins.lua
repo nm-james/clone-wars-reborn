@@ -30,6 +30,7 @@ end
 
 Falcon.CurrentRegiment = GetGlobalInt("FALCON:ACTIVEREGIMENT")
 
+
 Falcon.CreateSkin = function( name, data )
     if not name or not data or table.IsEmpty(data) then return ErrorNoHalt( "NAME OR DATA IS NOT FOUND - FALCON.SKINS" ) end
 
@@ -126,44 +127,6 @@ skin("Heavy", {
     Rarity = 1,
 })
 
-skin("BARC", {
-    Models = {
-        [1] = "Models/defcon/loudmantis/501/barc.mdl",
-        [2] = "Models/defcon/loudmantis/41/draa.mdl",
-        [3] = "Models/defcon/loudmantis/327/rook.mdl",
-        [4] = "Models/player/shader/ghost_company/starwars/clones/13_ghost_company_barc.mdl",
-        [5] = "Models/defcon/stallion/shock/k9trooper.mdl",
-        [6] = "Models/player/shader/wolfpack_company/starwars/clones/13_wolfpack_barc.mdl",
-        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
-    },
-    Rarity = 1,
-})
-
-skin("Airbourne", {
-    Models = {
-        [1] = "Models/defcon/loudmantis/501/arf.mdl",
-        [2] = "Models/defcon/stan/elitecorps/havokk.mdl",
-        [3] = "Models/defcon/loudmantis/327/k_officer.mdl",
-        [4] = "Models/loudmantis/212/ab_trooper.mdl",
-        [5] = "Models/defcon/stallion/shock/stone.mdl",
-        [6] = "Models/player/shader/wolfpack_company/starwars/clones/11_wolfpack_paratrooper.mdl",
-        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
-    },
-    Rarity = 1,
-})
-
-skin("Scout", {
-    Models = {
-        [1] = "Models/defcon/loudmantis/501/boomer.mdl",
-        [2] = "Models/defcon/stan/scouts/scouthacksaw.mdl",
-        [3] = "Models/defcon/loudmantis/327/vex.mdl",
-        [4] = "Models/strasser/bf2/p2_212/p2_212_scout_trooper.mdl",
-        [5] = "Models/player/ricky/dg/shock/ricky_shockspecialist.mdl",
-        [6] = "Models/loudmantis/dire/trooper.mdl",
-        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
-    },
-    Rarity = 1,
-})
 
 skin("Snow", {
     Models = {
@@ -189,6 +152,45 @@ skin("Engineer", {
         [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
     },
     Rarity = 1,
+})
+
+skin("Airbourne", {
+    Models = {
+        [1] = "Models/defcon/loudmantis/501/arf.mdl",
+        [2] = "Models/defcon/stan/elitecorps/havokk.mdl",
+        [3] = "Models/defcon/loudmantis/327/k_officer.mdl",
+        [4] = "Models/loudmantis/212/ab_trooper.mdl",
+        [5] = "Models/defcon/stallion/shock/stone.mdl",
+        [6] = "Models/player/shader/wolfpack_company/starwars/clones/11_wolfpack_paratrooper.mdl",
+        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
+    },
+    Rarity = 1,
+})
+
+skin("BARC", {
+    Models = {
+        [1] = "Models/defcon/loudmantis/501/barc.mdl",
+        [2] = "Models/defcon/loudmantis/41/draa.mdl",
+        [3] = "Models/defcon/loudmantis/327/rook.mdl",
+        [4] = "Models/player/shader/ghost_company/starwars/clones/13_ghost_company_barc.mdl",
+        [5] = "Models/defcon/stallion/shock/k9trooper.mdl",
+        [6] = "Models/player/shader/wolfpack_company/starwars/clones/13_wolfpack_barc.mdl",
+        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
+    },
+    Rarity = 2,
+})
+
+skin("Scout", {
+    Models = {
+        [1] = "Models/defcon/loudmantis/501/boomer.mdl",
+        [2] = "Models/defcon/stan/scouts/scouthacksaw.mdl",
+        [3] = "Models/defcon/loudmantis/327/vex.mdl",
+        [4] = "Models/strasser/bf2/p2_212/p2_212_scout_trooper.mdl",
+        [5] = "Models/player/ricky/dg/shock/ricky_shockspecialist.mdl",
+        [6] = "Models/loudmantis/dire/trooper.mdl",
+        [7] = "Models/player/republiccommandosmp/rc_recon.mdl",
+    },
+    Rarity = 2,
 })
 
 skin("Pilot", {

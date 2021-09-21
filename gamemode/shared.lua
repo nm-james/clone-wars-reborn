@@ -46,6 +46,7 @@ includeFiles( GM.FolderName .. "/gamemode", true )
 
 local plyMeta = FindMetaTable("Player")
 
+
 function plyMeta:IsAdmin()
 	return true
 end

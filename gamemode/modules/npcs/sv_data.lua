@@ -44,6 +44,39 @@ Falcon.InteractableNPCs = {
         Desc = "Buy and Sell Items",
         Permanent = true, 
     },
+    { 
+        Pos = {
+            Vector(4830.803711, -7453.934082, 20.035740),
+        },
+        Ang = {
+            Angle( 0, 180, 0 ),
+        },
+        Options = {
+            {
+                Text = "Can I please redo the tutorial?",
+                Menu = 3,
+            },
+            {
+                Text = "How does this server work?",
+            },
+            {
+                Text = "Where are the regiments?",
+            },
+            {
+                Text = "How do I get abilities?",
+            },
+            {
+                Text = "How do I donate?",
+            },
+            {
+                Text = "Why are people random models (i.e a SGT as a Medic)?",
+            },
+        },
+        Name = "TK-420",
+        Occupation = "Trainer",
+        Desc = "Train and Learn about Falcon's SWRP",
+        Permanent = true, 
+    }
 }
 
 Falcon.NPCData = {}

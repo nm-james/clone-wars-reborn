@@ -214,7 +214,7 @@ local function MainUI( content )
                     local clientModel = ents.CreateClientProp()
                     clientModel:SetModel(i.Model.String)
                     clientModel:SetAngles( Angle( 0, 0, 0 ) )
-                    clientModel:SetPos( Vector( 4095.965332, -7381.985352, 86.903305 ) )
+                    clientModel:SetPos( po.EntPos )
 
                     str.ProductEnt = clientModel
                 end
@@ -304,7 +304,7 @@ local function MainUI( content )
                     local clientModel = ents.CreateClientProp()
                     clientModel:SetModel(i.Model.String)
                     clientModel:SetAngles( Angle( 0, 0, 0 ) )
-                    clientModel:SetPos( Vector( 4095.965332, -7381.985352, 86.903305 ) )
+                    clientModel:SetPos( po.EntPos )
 
                     str.ProductEnt = clientModel
                 end
@@ -567,5 +567,4 @@ end )
 
 concommand.Add("open_store", function()
     OpenStore()
-
 end)

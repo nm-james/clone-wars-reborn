@@ -52,6 +52,8 @@ function UpdateClientStoreInfo( type, starting, common, uncommon, rare, legendar
         [4] = Falcon.GetItemsByRarity( 4 ),
         [5] = Falcon.GetItemsByRarity( 5 ),
     }
+
+    print("items", #rItems[1])
     
 
     for i = 1, max do
@@ -79,7 +81,7 @@ function UpdateClientStoreInfo( type, starting, common, uncommon, rare, legendar
     SyncStoreContent()
     return items
 end
-
+UpdateClientStoreInfo( "Weekly", 7, 750, 1300, 750, 300, 65 )
 
 local function CheckResetTime()
 	local minly = tonumber( Falcon.Store.Minly.Delay )

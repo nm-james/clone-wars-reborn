@@ -66,6 +66,7 @@ local function MainUI( npc, content )
     local uis = {
         [1] = OpenAttachments,
         [2] = OpenStore,
+        [3] = OpenTutorial,
     }
 
     local talkPnl = vgui.Create("DPanel", content)

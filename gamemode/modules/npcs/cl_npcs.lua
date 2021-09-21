@@ -108,15 +108,15 @@ local sides = {
 local function DrawNPCsOverhead()
     if Falcon.HasNPCSpeaking == 2 then return end
     local ply = LocalPlayer()
-    local scrw, scrh = ScrW(), ScrH()
+    local w, h = ScrW(), ScrH()
     local cone = ents.FindInCone( ply:EyePos(), ply:GetAimVector(), 150, math.cos( math.rad( 25 ) ) )
 
     for _, npc in pairs( cone ) do
         if not npc.FalconClient then continue end
         cam.Start3D2D( npc:GetPos() + Vector( 0, 0, 100 ), Angle( 0, ply:GetAngles().y - 90, 90 ), 0.1 )
-            draw.DrawText(npc.Name, "F35", 0, 132, Color(125,125,125,255), TEXT_ALIGN_CENTER)
-            draw.DrawText(npc.Occupation, "F15", 0, 197, Color(75,75,75,255), TEXT_ALIGN_CENTER)
-            draw.DrawText(sides[npc.Allegience], "F11", 0, 225, GetOccupationColor(npc.Allegience), TEXT_ALIGN_CENTER)
+            draw.DrawText(npc.Name, "F35_CAMERA", 0, 132, Color(125,125,125,255), TEXT_ALIGN_CENTER)
+            draw.DrawText(npc.Occupation, "F15_CAMERA", 0, 197, Color(75,75,75,255), TEXT_ALIGN_CENTER)
+            draw.DrawText(sides[npc.Allegience], "F11_CAMERA", 0, 225, GetOccupationColor(npc.Allegience), TEXT_ALIGN_CENTER)
         cam.End3D2D()
     end
 end

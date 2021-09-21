@@ -17,6 +17,13 @@ for i = 1, 60 do
 	})
 end
 
+for i = 1, 60 do
+	surface.CreateFont( "F" .. tostring(i) .. "_CAMERA", {
+		font = "Teko",
+		size = i * (1920 * 0.0016)
+	})
+end
+
 function ThirdPersonCalc( ply, pos, angles, fov )
 	local bn = ply:LookupBone( "ValveBiped.Bip01_Head1" )
 
